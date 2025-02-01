@@ -1,9 +1,12 @@
 import React from "react";
+import LetterLogo from "@/src/assets/letterLogo";
 
 export const Header = () => {
   return (
     <header className="text-orange100">
-      <div></div>
+      <div>
+        <LetterLogo />
+      </div>
       <nav></nav>
     </header>
   );
