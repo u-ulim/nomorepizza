@@ -1,7 +1,12 @@
-const LetterLogo = () => (
+import React from "react";
+
+type LetterLogoProps = {
+  className?: string; // className의 타입을 명확히 지정
+};
+
+const LetterLogo: React.FC<LetterLogoProps> = ({ className = "" }) => (
   <svg
-    width="265"
-    height="70"
+    className={`w-full h-full ${className}`} // Tailwind 적용 가능
     viewBox="0 0 265 70"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
