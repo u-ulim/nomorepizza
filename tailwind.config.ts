@@ -7,6 +7,13 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true, // 컨테이너를 중앙 정렬
+      padding: "15px", // 좌우 패딩 15px 적용
+      screens: {
+        xl: "1280px", // xl 이상에서 컨테이너 최대 너비 1280px (즉, 내부 컨텐츠는 1250px)
+      },
+    },
     extend: {
       colors: {
         primary: "#FF6D00",
