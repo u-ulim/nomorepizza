@@ -12,6 +12,7 @@ export const Header = () => {
   return (
     <header className="w-[100%] bg-white shadow-md">
       <div className="py-4 flex justify-between items-center container">
+        {/* Link 추가 */}
         <Link href="/">
           {/* 로고 */}
           <LetterLogo className="w-[200px] text-primary" />
