@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import LetterLogo from "@/src/assets/letterLogo";
 import { navMenus } from "../constants";
+import Link from "next/link";
 
 export const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
@@ -11,8 +12,10 @@ export const Header = () => {
   return (
     <header className="w-[100%] bg-white shadow-md">
       <div className="py-4 flex justify-between items-center container">
-        {/* 로고 */}
-        <LetterLogo className="w-[200px] text-primary" />
+        <Link href="/">
+          {/* 로고 */}
+          <LetterLogo className="w-[200px] text-primary" />
+        </Link>
 
         {/* 네비게이션 */}
         <nav className="flex gap-6">
