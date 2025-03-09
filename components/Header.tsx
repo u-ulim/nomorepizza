@@ -3,19 +3,19 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import LetterLogo from "@/src/assets/letterLogo";
-import { navMenus } from "../constants";
+import { navMenus } from "@/constants";
 import Link from "next/link";
 
 export const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
   return (
-    <header className="w-[100%] bg-white shadow-md">
+    <header className="w-[100%] bg-transparent shadow-md fixed">
       <div className="py-4 flex justify-between items-center container">
         {/* Link 추가 */}
         <Link href="/">
           {/* 로고 */}
-          <LetterLogo className="w-[200px] text-primary" />
+          <LetterLogo className="w-[180px] text-primary" />
         </Link>
 
         {/* 네비게이션 */}

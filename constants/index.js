@@ -19,6 +19,12 @@ export const navMenus = [
   },
   {
     title: "브랜드",
-    subItems: ["overview", "ceo", "History", "BI"],
+    subItems: ["Overview", "CEO", "History", "BI"],
   },
+];
+
+export const mainSlides = [
+  { id: 1, image: "/images/slide1.jpg", text: "Welcome to NoMorePizza" },
+  { id: 2, image: "/images/slide2.jpg", text: "Best Place for No Pizza" },
+  { id: 3, image: "/images/slide3.jpg", text: "Enjoy Something Different" },
 ];
