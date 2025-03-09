@@ -6,7 +6,7 @@ type LetterLogoProps = {
 
 const LetterLogo: React.FC<LetterLogoProps> = ({ className = "" }) => (
   <svg
-    className={`w-full h-full ${className}`} // Tailwind 적용 가능
+    className={`${className}`} // Tailwind 적용 가능
     viewBox="0 0 265 70"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"

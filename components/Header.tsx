@@ -15,7 +15,7 @@ export const Header = () => {
         {/* Link 추가 */}
         <Link href="/">
           {/* 로고 */}
-          <LetterLogo className="w-[180px] text-primary" />
+          <LetterLogo className="w-[200px] text-primary" />
         </Link>
 
         {/* 네비게이션 */}
