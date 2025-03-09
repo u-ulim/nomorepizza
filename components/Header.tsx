@@ -10,7 +10,7 @@ export const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
   return (
-    <header className="w-[100%] bg-transparent shadow-md fixed">
+    <header className="w-[100%] bg-transparent shadow-md fixed z-50">
       <div className="py-4 flex justify-between items-center container">
         {/* Link 추가 */}
         <Link href="/">
