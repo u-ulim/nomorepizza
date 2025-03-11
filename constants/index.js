@@ -23,8 +23,14 @@ export const navMenus = [
   },
 ];
 
+import mainImg01 from "@/src/assets/1920Main.png";
+
 export const mainSlides = [
-  { id: 1, image: "/images/slide1.jpg", text: "Welcome to NoMorePizza" },
+  {
+    id: 1,
+    image: `${mainImg01.src}`,
+    text: "Welcome to NoMorePizza",
+  },
   { id: 2, image: "/images/slide2.jpg", text: "Best Place for No Pizza" },
   { id: 3, image: "/images/slide3.jpg", text: "Enjoy Something Different" },
 ];

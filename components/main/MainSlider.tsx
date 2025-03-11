@@ -4,6 +4,8 @@ import { motion, useAnimation } from "framer-motion";
 import { useEffect, useState } from "react";
 import { mainSlides } from "@/constants";
 
+import Image from "next/image";
+
 export const MainSlider = () => {
   // extendedSlides: 앞뒤에 클론 추가
   // 예를 들어 mainSlides가 [A, B, C]라면 extendedSlides는 [C, A, B, C, A]
@@ -16,6 +18,7 @@ export const MainSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(1);
   // 애니메이션 진행 여부 상태
   const [isAnimating, setIsAnimating] = useState(false);
+
   const controls = useAnimation();
 
   const moveSlide = async (newIndex: number) => {
@@ -65,7 +68,7 @@ export const MainSlider = () => {
             className="w-full h-full flex-shrink-0 flex items-center justify-center bg-cover bg-center"
             style={{ backgroundImage: `url(${slide.image})` }}
           >
-            <h1 className="text-title56 text-black">{slide.text}</h1>
+            {/* <h1 className="text-title56 text-black">{slide.text}</h1> */}
           </div>
         ))}
       </motion.div>
