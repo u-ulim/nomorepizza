@@ -63,12 +63,24 @@ export const MainSlider = () => {
       {/* 슬라이드 컨테이너 */}
       <motion.div className="flex w-full h-full" animate={controls}>
         {extendedSlides.map((slide, index) => (
-          <div
-            key={index}
-            className="w-full h-full flex-shrink-0 flex items-center justify-center bg-cover bg-center"
-            style={{ backgroundImage: `url(${slide.image})` }}
-          >
-            {/* <h1 className="text-title56 text-black">{slide.text}</h1> */}
+          <div key={index} className="relative w-full h-full flex-shrink-0">
+            {slide.type === "video" ? (
+              <video
+                src={slide.src}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-full object-cover object-center"
+              />
+            ) : (
+              <Image
+                src={slide.src}
+                alt={slide.text}
+                fill
+                className="object-cover object-center"
+              />
+            )}
           </div>
         ))}
       </motion.div>

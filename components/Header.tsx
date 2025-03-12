@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import LetterLogo from "@/src/assets/letterLogo";
 import { navMenus } from "@/constants";
@@ -8,9 +8,20 @@ import Link from "next/link";
 
 export const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  //스크롤 이벤트 리스너 추가
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 1);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className="w-[100%] bg-transparent shadow-md fixed z-50">
+    <header className="w-[100%] fixed z-50 shadow-md bg-white">
       <div className="py-4 flex justify-between items-center container">
         {/* Link 추가 */}
         <Link href="/">
@@ -28,7 +39,7 @@ export const Header = () => {
               onMouseLeave={() => setActiveDropdown(null)}
             >
               {/* 메인 메뉴 */}
-              <button className="text-gray-800 font-semibold px-4 py-2 hover:text-primary">
+              <button className="text-textDark font-semibold px-4 py-2 hover:text-primary">
                 {menu.title}
               </button>
 

@@ -23,14 +23,27 @@ export const navMenus = [
   },
 ];
 
-import mainImg01 from "@/src/assets/1920Main.png";
+import mainImg01 from "@/src/assets/slide01.png";
+import mainImg02 from "@/src/assets/slide02.png";
+import mainImg03 from "@/src/assets/slide03.png";
 
 export const mainSlides = [
   {
+    type: "image",
     id: 1,
-    image: `${mainImg01.src}`,
+    src: `${mainImg01.src}`,
     text: "Welcome to NoMorePizza",
   },
-  { id: 2, image: "/images/slide2.jpg", text: "Best Place for No Pizza" },
-  { id: 3, image: "/images/slide3.jpg", text: "Enjoy Something Different" },
+  {
+    type: "image",
+    id: 2,
+    src: `${mainImg02.src}`,
+    text: "Best Place for No Pizza",
+  },
+  {
+    type: "image",
+    id: 3,
+    src: `${mainImg03.src}`,
+    text: "Enjoy Something Different",
+  },
 ];
