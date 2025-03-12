@@ -4,6 +4,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useEffect, useState } from "react";
 import { mainSlides } from "@/constants";
 
+import Link from "next/link";
 import Image from "next/image";
 
 export const MainSlider = () => {
@@ -59,7 +60,7 @@ export const MainSlider = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <main className="relative w-full h-screen overflow-hidden">
       {/* 슬라이드 컨테이너 */}
       <motion.div className="flex w-full h-full" animate={controls}>
         {extendedSlides.map((slide, index) => (
@@ -89,7 +90,7 @@ export const MainSlider = () => {
       <button
         onClick={prevSlide}
         disabled={isAnimating}
-        className={`absolute top-1/2 left-4 transform -translate-y-1/2 bg-black/50 text-white p-4 rounded-full ${
+        className={`absolute top-1/2 left-4 transform -translate-y-1/2 bg-black/50 text-white px-4 py-3 rounded-full ${
           isAnimating ? "opacity-50 cursor-not-allowed" : ""
         }`}
       >
@@ -98,13 +99,33 @@ export const MainSlider = () => {
       <button
         onClick={nextSlide}
         disabled={isAnimating}
-        className={`absolute top-1/2 right-4 transform -translate-y-1/2 bg-black/50 text-white p-4 rounded-full ${
+        className={`absolute top-1/2 right-4 transform -translate-y-1/2 bg-black/50 text-white px-4 py-3 rounded-full ${
           isAnimating ? "opacity-50 cursor-not-allowed" : ""
         }`}
       >
         ▶
       </button>
-    </div>
+      <div className=" absolute bottom-0  left-1/2 transform -translate-x-1/2  container flex justify-between items-center text-subTitle17  text-gray50">
+        <Link
+          className="flex-1 flex items-center justify-center h-[80px] rounded-tl-[12px] bg-black"
+          href="/"
+        >
+          노모어피자 관련 이슈, 공지
+        </Link>
+        <Link
+          className="flex-1 flex items-center justify-center h-[80px] border-l border-r bg-black"
+          href="/"
+        >
+          2025 1분기 매출 현황
+        </Link>
+        <Link
+          className="flex-1 flex items-center justify-center h-[80px] rounded-tr-[12px] bg-black"
+          href="/"
+        >
+          창업문의
+        </Link>
+      </div>
+    </main>
   );
 };
 

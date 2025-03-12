@@ -68,6 +68,7 @@ export default {
           "17px",
           { fontWeight: "600", lineHeight: "25px", letterSpacing: "-3%" },
         ],
+
         subTitleBold28: [
           "28px",
           { fontWeight: "600", lineHeight: "34px", letterSpacing: "-2%" },
