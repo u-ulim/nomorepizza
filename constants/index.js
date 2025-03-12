@@ -26,7 +26,6 @@ export const navMenus = [
 import mainImg01 from "@/src/assets/slide01.png";
 import mainImg02 from "@/src/assets/slide02.png";
 import mainImg03 from "@/src/assets/slide03.png";
-
 export const mainSlides = [
   {
     type: "image",
