@@ -60,7 +60,7 @@ export const MainSlider = () => {
   }, []);
 
   return (
-    <main className="relative w-full h-screen overflow-hidden">
+    <main className="relative w-full h-screen overflow-hidden mb-[200px]">
       {/* 슬라이드 컨테이너 */}
       <motion.div className="flex w-full h-full" animate={controls}>
         {extendedSlides.map((slide, index) => (
