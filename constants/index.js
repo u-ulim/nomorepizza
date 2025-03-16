@@ -1,3 +1,4 @@
+// 네비게이션 메뉴
 export const navMenus = [
   {
     title: "메뉴",
@@ -23,9 +24,10 @@ export const navMenus = [
   },
 ];
 
-import mainImg01 from "@/src/assets/slide01.png";
-import mainImg02 from "@/src/assets/slide02.png";
-import mainImg03 from "@/src/assets/slide03.png";
+// 메인 슬라이드
+import mainImg01 from "@/src/assets/home/slideSection/slide01.png";
+import mainImg02 from "@/src/assets/home/slideSection/slide02.png";
+import mainImg03 from "@/src/assets/home/slideSection/slide03.png";
 export const mainSlides = [
   {
     type: "image",
@@ -44,5 +46,23 @@ export const mainSlides = [
     id: 3,
     src: `${mainImg03.src}`,
     text: "Enjoy Something Different",
+  },
+];
+
+// 메인 메뉴들
+import menuImg01 from "@/src/assets/home/menuSection/옥수수새우피자.png";
+import menuImg02 from "@/src/assets/home/menuSection/바질마스카포네 뇨끼.png";
+export const menuContentImages = [
+  {
+    id: 1,
+    src: `${menuImg01.src}`,
+    title: "옥수수 새우 피자",
+    text: "매콤한 양념에 숙성된 통새우와 달콤한 하바나 통 옥수수의 토핑으로 구성된 노모어피자의 인기메뉴",
+  },
+  {
+    id: 2,
+    src: `${menuImg02.src}`,
+    title: "바질마스카포네 뇨끼 피자",
+    text: "바질과 썬드라이토마토 그리고 마스카포네 치즈의 풍미와 쫄깃한 뇨끼를 함께 즐길 수 있는 피자",
   },
 ];

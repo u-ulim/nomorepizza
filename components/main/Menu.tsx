@@ -2,6 +2,8 @@ import React from "react";
 import { MenuTitle } from "./MenuTitle";
 import { MenuContents } from "./MenuContents";
 
+import { menuContentImages } from "@/constants";
+
 export const Menu = () => {
   return (
     <section className="container">
@@ -13,8 +15,9 @@ export const Menu = () => {
         btnClassName="text-primary flex items-center gap-[12px]"
       />
       <div className="flex justify-between">
-        <MenuContents />
-        <MenuContents />
+        {menuContentImages.map((item, index) => (
+          <MenuContents item={item} key={index} />
+        ))}
       </div>
     </section>
   );

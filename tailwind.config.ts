@@ -38,7 +38,7 @@ export default {
 
         orange100: "#fde6d6",
         orange200: "#FFF1e6",
-        orange300: "#fff3e0",
+        orange300: "#FFF3E0",
         orange400: "#fae3c6",
 
         textLight: "#fffff0",
