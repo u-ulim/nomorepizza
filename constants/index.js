@@ -66,3 +66,8 @@ export const menuContentImages = [
     text: "바질과 썬드라이토마토 그리고 마스카포네 치즈의 풍미와 쫄깃한 뇨끼를 함께 즐길 수 있는 피자",
   },
 ];
+
+// 브랜드 컨텐츠
+import brandImg01 from "@/src/assets/home/brandSection/BrandCard01.png";
+import brandImg02 from "@/src/assets/home/brandSection/BrandCard02.png";
+import brandImg03 from "@/src/assets/home/brandSection/BrandCard03.png";

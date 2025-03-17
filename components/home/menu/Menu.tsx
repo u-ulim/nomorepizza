@@ -10,7 +10,7 @@ export const Menu = () => {
       <MenuTitle
         title="Menu"
         btnHref="/menu"
-        btnText="The more Menus"
+        btnText="The More Menus"
         // 여기는 인라인 style 대신 className로
         btnClassName="text-primary flex items-center gap-[12px]"
       />
