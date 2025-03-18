@@ -71,3 +71,29 @@ export const menuContentImages = [
 import brandImg01 from "@/src/assets/home/brandSection/BrandCard01.png";
 import brandImg02 from "@/src/assets/home/brandSection/BrandCard02.png";
 import brandImg03 from "@/src/assets/home/brandSection/BrandCard03.png";
+export const brandContent = [
+  {
+    id: 1,
+    src: `${brandImg01.src}`,
+    topText: "최고의 순간을 노모어피자와!",
+    title: "Brand Story",
+    desc01: `"더이상의 피자는 없다",`,
+    desc02: "소금 우유를 사용한 노모어만의 촉촉한 도우",
+  },
+  {
+    id: 2,
+    src: `${brandImg02.src}`,
+    topText: "노모어피자와 함께 할 점주님을 모집합니다!",
+    title: "With No More",
+    desc01: `맞춤형 창업과 파격적인 마케팅,`,
+    desc02: "다시 찾을 수 밖에 없는 피자",
+  },
+  {
+    id: 3,
+    src: `${brandImg03.src}`,
+    topText: "노모어피자 매장을 찾아보세요!",
+    title: "Store",
+    desc01: `매장이 이렇게나 많이? 짧은 시간동안,`,
+    desc02: "2023년 기준 80개의 지점으로 자리매김",
+  },
+];
