@@ -28,7 +28,7 @@ export const MenuContents: React.FC<MenuContentsProps> = ({ item }) => {
         <h2 className="text-subTitleBold28 text-textDark">{item.title}</h2>
         <RightArrow width="8px" className="text-textDark" />
       </div>
-      <p className="w-[390px] text-gray300 text-subTitle17 mx-auto">
+      <p className="w-[390px] text-gray300 text-subTitle17 mx-auto text-center">
         {item.text}
       </p>
     </div>

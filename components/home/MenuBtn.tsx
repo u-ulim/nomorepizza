@@ -1,6 +1,6 @@
 interface MenuBtnProps {
   href: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
   style?: CSSProperties;
   className?: string;
 }

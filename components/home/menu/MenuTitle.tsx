@@ -1,5 +1,4 @@
-import React, { CSSProperties } from "react";
-import { MenuBtn } from "./MenuBtn";
+import { MenuBtn } from "../MenuBtn";
 
 // 1) props 타입 선언
 interface MenuTitleProps {

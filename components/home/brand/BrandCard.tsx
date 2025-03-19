@@ -12,21 +12,25 @@ export interface BrandContentItem {
 export interface BrandCardProps {
   cssProps: string;
   item: BrandContentItem; // item은 선택적으로 전달될 수 있습니다.
+  isOdd?: boolean;
 }
 
 interface BrandContentProps {
   cssProps: string;
   item: BrandContentItem;
+  isOdd?: boolean;
 }
 
 import React from "react";
 
 import Image from "next/image";
 import { BrandTitle } from "./BrandTitle";
+import { MenuBtn } from "../MenuBtn";
 
 export const BrandCard: React.FC<BrandCardProps> = ({
   item,
   cssProps,
+  isOdd,
 }: BrandContentProps) => {
   return (
     <div className={cssProps}>
@@ -37,7 +41,17 @@ export const BrandCard: React.FC<BrandCardProps> = ({
         height={502}
         className="rounded-[12px]"
       />
-      <BrandTitle item={item} />
+      <div className="flex flex-col">
+        <BrandTitle item={item} />
+        <MenuBtn
+          className={`flex gap-[12px] text-primary text-right ${
+            isOdd ? "justify-end" : ""
+          }`}
+          href={item.src}
+        >
+          {"The More Read"}
+        </MenuBtn>
+      </div>
     </div>
   );
 };
