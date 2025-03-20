@@ -1,6 +1,7 @@
 import { MainSlider } from "@/components/home/slide/MainSlider";
 import { Menu } from "@/components/home/menu/Menu";
 import { Brand } from "@/components/home/brand/Brand";
+import { Movie } from "@/components/home/movie/Movie";
 
 export default function HomePage() {
   return (
@@ -8,6 +9,7 @@ export default function HomePage() {
       <MainSlider />
       <Menu />
       <Brand />
+      <Movie />
     </div>
   );
 }

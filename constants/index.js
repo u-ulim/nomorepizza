@@ -97,3 +97,11 @@ export const brandContent = [
     desc02: "2023년 기준 80개의 지점으로 자리매김",
   },
 ];
+
+// 뮤비 컨텐츠
+export const movieContent = [
+  {
+    id: 1,
+    src: "/movieSection/nomore.mp4",
+  },
+];
